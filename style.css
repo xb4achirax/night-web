@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: linear-gradient(19deg, #0D0D0E, #B721FF);
+    height: 100vh;
+    font-family: "Karantina", system-ui;
+ 
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+header
+{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .logo
+{
+    font-size: 45px;
+}
+header ul
+{
+    z-index: 1;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+header ul li
+{
+    margin-right: 20px;
+}
+header ul li a
+{
+    padding: 6px 15px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+header ul li a:hover ,.active
+{
+    background: #fff;
+    color: #B721FF;
+}
+.main
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main img
+{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+#moon
+{
+    mix-blend-mode: screen;
+    transform: translateY(40px);
+}
+.content
+{
+    color: #fff;
+    padding: 30px;
+}
+.content h2
+{
+margin: 30px;
+font-size: 30px;
+}
+.content p
+{
+    margin: 20px;
+}
+
+.main:after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #B721FF, transparent);
+    transform: translateY(55px);
+}
+.tobba
+{
+    color: #fff;
+    font-size: 30px;
+    transform: translateY(-140px);
+}
